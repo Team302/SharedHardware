@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+    <primitive id="RESET_POSITION"
+			   pathname="OutOfWay1.wpilib.json"/>
+    <primitive id="DO_NOTHING"
+               time="0.5"
+               headingOption="TOWARD_GOAL"
+               shooter="PREPARETOSHOOT"/> 
+    <primitive id="DO_NOTHING"
+               time="2.0"
+               headingOption="TOWARD_GOAL"
+               shooter="SHOOT_HIGHGOAL_FAR"/> 
+    <primitive id="DRIVE_PATH"
+               pathname="OutOfWay1.wpilib.json" 
+               rightIntake="INTAKE_ON"
+               headingOption="SPECIFIED_ANGLE"
+               heading="-15"/> 
+    <primitive id="DO_NOTHING"
+               time="0.5"
+               rightIntake="INTAKE_ON"
+               headingOption="SPECIFIED_ANGLE"
+               heading="-75"/>
+
+    <!-- primitive id="DRIVE_PATH"
+               pathname="OutOfWay2.wpilib.json" 
+               rightIntake="INTAKE_ON"
+               headingOption="SPECIFIED_ANGLE"
+               heading="-90"/ --> 
+               
+    <primitive id="DO_NOTHING"
+               time="0.5"
+               headingOption="SPECIFIED_ANGLE"
+               heading="-145"/> 
+    <primitive id="DO_NOTHING"
+               time="10.0"
+               headingOption="SPECIFIED_ANGLE"
+               heading="-145"
+               shooter="SHOOT_LOW_GOAL"/>
+</auton>
